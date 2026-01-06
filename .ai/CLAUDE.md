@@ -5,6 +5,18 @@ This file defines how Claude Code should interact with this repository. It enfor
 
 ---
 
+## Token Optimization Contract
+
+- Default response: ≤200 words, ≤12 bullets. Expand only if asked.
+- If user asks for depth, ignore caps.
+- No plan restatements. No "what I will do" narration.
+- No code unless explicitly requested. If requested: only changed files.
+- Do not list tools or inventories. Use tools silently.
+- Do not pre-load KG or MCP. Only retrieve when blocked or explicitly asked.
+- New sessions: rehydrate from repo files, not chat.
+
+---
+
 ## Core Rules
 
 ### 1. Always Run Doctor First
